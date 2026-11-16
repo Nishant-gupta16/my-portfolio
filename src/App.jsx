@@ -60,6 +60,31 @@ const skillGroups = [
   },
 ]
 
+const skillMarks = {
+  'C++': 'C++',
+  Java: '☕',
+  JavaScript: 'JS',
+  HTML5: '5',
+  CSS3: '3',
+  'React.js': '⚛',
+  'Node.js': 'JS',
+  'Express.js': 'EX',
+  JSP: 'JSP',
+  Servlets: 'SV',
+  MySQL: 'SQL',
+  MongoDB: 'MDB',
+  DSA: 'DSA',
+  OOP: 'OOP',
+  DBMS: 'DB',
+  SDLC: 'SD',
+  Git: '⑂',
+  GitHub: 'GH',
+  Windows: '⊞',
+  Linux: '🐧',
+  macOS: '●',
+  Networking: '↗',
+}
+
 const internships = [
   {
     company: 'Unified Mentor Pvt. Ltd.',
@@ -272,7 +297,12 @@ function App() {
                 <span className="skill-number">0{index + 1}</span>
                 <h3>{group.title}</h3>
                 <ul>
-                  {group.skills.map((skill) => <li key={skill}>{skill}</li>)}
+                  {group.skills.map((skill) => (
+                    <li key={skill}>
+                      <span className="skill-icon" aria-hidden="true">{skillMarks[skill]}</span>
+                      <span>{skill}</span>
+                    </li>
+                  ))}
                 </ul>
               </article>
             ))}
