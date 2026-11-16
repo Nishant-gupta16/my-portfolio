@@ -27,4 +27,4 @@ The project also works with other static hosts. Build it with `npm run build` an
 
 ## Portfolio images
 
-The hero portrait and project screenshots are stored in `public/` and are included in the production build. To replace them, use the same filenames: `nishant-gupta.jpg`, `project-knowyourmedicine.png`, `project-brahmastra.png`, and `project-taskmaster.png`.
+The hero portrait and project screenshots are stored in `public/` and are included in the production build. To replace them, use the same filenames: `nishant-gupta.png`, `project-knowyourmedicine.png`, `project-brahmastra.png`, and `project-taskmaster.png`.
